@@ -1,0 +1,155 @@
+{
+   "type": "game_mode",
+   "alias": "easy_mode:game_mode:easy",
+   "ordinal": 1.5,
+   "display_name": "i18n(easy_mode:ui.shell.select_game_story.game_modes.easy.display_name)",
+   "description": "i18n(easy_mode:ui.shell.select_game_story.game_modes.easy.description)",
+   "post_selection_text": "i18n(easy_mode:ui.shell.select_game_story.game_modes.easy.post_selection_text)",
+   "image": "file(easy.png)",
+   "baseline_happiness": 50,
+   "combat_safety_thought": true,
+   "monster_tuning_overrides": {
+      "default": {
+         "add_buffs": {
+            "easy_mode_buff": "easy_mode:buffs:game_mode:easy"
+         }
+      }
+   },
+   "encounter_tuning_overrides": {
+      "default": {
+         "generator_delay_modifier": 1.5
+      },
+      "very_easy_raids": {
+         "can_start": {
+            "test_1": {
+               "military_strength_check": {
+                  "type": "deny_if_not_between",
+                  "item": "score",
+                  "score_type": "military_strength",
+                  "value": {
+                     "min": 40,
+                     "max": 105
+                  }
+               }
+            }
+         }
+      },
+      "easy_raids": {
+         "can_start": {
+            "test_1": {
+               "military_strength_check": {
+                  "type": "deny_if_not_between",
+                  "item": "score",
+                  "score_type": "military_strength",
+                  "value": {
+                     "min": 100,
+                     "max": 150
+                  }
+               }
+            }
+         }
+      },
+      "medium_raids": {
+         "can_start": {
+            "test_1": {
+               "military_strength_check": {
+                  "type": "deny_if_not_between",
+                  "item": "score",
+                  "score_type": "military_strength",
+                  "value": {
+                     "min": 150,
+                     "max": 225
+                  }
+               }
+            }
+         }
+      },
+      "hard_raids": {
+         "can_start": {
+            "test_1": {
+               "military_strength_check": {
+                  "type": "deny_if_not_between",
+                  "item": "score",
+                  "score_type": "military_strength",
+                  "value": {
+                     "min": 220,
+                     "max": 300
+                  }
+               }
+            }
+         }
+      },
+      "insane_raids": {
+         "can_start": {
+            "test_1": {
+               "military_strength_check": {
+                  "type": "deny_if_not_between",
+                  "item": "score",
+                  "score_type": "military_strength",
+                  "value": {
+                     "min": 300,
+                     "max": 375
+                  }
+               }
+            }
+         }
+      },
+      "epic_1_raids": {
+         "can_start": {
+            "test_1": {
+               "military_strength_check": {
+                  "type": "deny_if_not_between",
+                  "item": "score",
+                  "score_type": "military_strength",
+                  "value": {
+                     "min": 375,
+                     "max": 450
+                  }
+               }
+            }
+         }
+      },
+      "epic_2_raids": {
+         "can_start": {
+            "test_1": {
+               "military_strength_check": {
+                  "type": "deny_if_not_between",
+                  "item": "score",
+                  "score_type": "military_strength",
+                  "value": {
+                     "min": 450,
+                     "max": 600
+                  }
+               }
+            }
+         }
+      },
+      "epic_3_raids": {
+         "can_start": {
+            "test_1": {
+               "military_strength_check": {
+                  "type": "deny_if_not_between",
+                  "item": "score",
+                  "score_type": "military_strength",
+                  "value": {
+                     "min": 600,
+                     "max": 700
+                  }
+               }
+            }
+         }
+      },
+      "epic_4_raids": {
+         "can_start": {
+            "test_1": {
+               "military_strength_check": {
+                  "type": "deny_if_less_than",
+                  "item": "score",
+                  "score_type": "military_strength",
+                  "value": 700
+               }
+            }
+         }
+      }
+   }
+}

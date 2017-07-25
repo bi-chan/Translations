@@ -1,0 +1,14 @@
+{
+	"info" : {
+		"name" : "easy_mode",
+		"version" : 3
+	},
+	"default_locale": "en",
+	"aliases": {
+		"buffs:game_mode:easy":"file(data/buffs/game_modes/game_mode_easy_buff.json)",
+		"game_mode:easy":"file(data/game_mode/easy/easy.json)"
+	},
+	"mixintos" :  {
+		"stonehearth:game_mode:index": "file(data/game_mode/index.json)"
+	}
+}

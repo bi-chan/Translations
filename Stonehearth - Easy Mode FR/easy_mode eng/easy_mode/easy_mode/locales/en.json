@@ -1,0 +1,25 @@
+{
+   "ui": {
+      "shell": {
+         "select_game_story": {
+            "game_modes": {
+               "easy": {
+                  "display_name": "Easy",
+                  "description": "Face less and easier monsters",
+                  "post_selection_text": "a nice place to start anew."
+               }
+            }
+         }
+      }
+   },
+   "data": {
+      "buffs": {
+         "game_modes": {
+            "game_mode_easy_buff": {
+               "display_name": "Easy Mode",
+               "description": "In Easy Mode, enemies have less armor and health and will inflict less damage"
+            }
+         }
+      }
+   }
+}

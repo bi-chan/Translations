@@ -1,0 +1,25 @@
+{
+   "ui": {
+      "shell": {
+         "select_game_story": {
+            "game_modes": {
+               "easy": {
+                  "display_name": "Facile",
+                  "description": "Les monstres apparaissent moins souvent et sont moins forts. Votre ville grandira a un bon rythme.",
+                  "post_selection_text": "un bel endroit pour un nouveau commencement."
+               }
+            }
+         }
+      }
+   },
+   "data": {
+      "buffs": {
+         "game_modes": {
+            "game_mode_easy_buff": {
+               "display_name": "Mode Facile",
+               "description": "Dans le mode facile, les ennemis ont moins d'armure et de vie. Ils vont aussi infliger moins de dommages"
+            }
+         }
+      }
+   }
+}
